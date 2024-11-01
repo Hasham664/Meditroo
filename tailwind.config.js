@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -20,22 +20,15 @@ module.exports = {
       screens: {
         tablet: "840px",
       },
-       animation: {
-        marquee: 'marquee 28s linear infinite',
+      animation: {
+        marquee: "marquee 28s linear infinite",
       },
-     
-  keyframes: {
+      keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-200%)' },
-        }
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-200%)" },
+        },
       },
-  variants: {
-    extend: {
-      animation: ['hover', 'focus'],
-    }
-  },
-     
     },
   },
   plugins: [],
