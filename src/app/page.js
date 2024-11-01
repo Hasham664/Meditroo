@@ -1,5 +1,3 @@
-"use client";
-
 import Contactus from "@/Components/Home/Contactus";
 import Footer from "@/Components/Home/Footer";
 import HealNets from "@/Components/Home/HealNets";
